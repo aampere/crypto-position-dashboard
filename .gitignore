@@ -1,0 +1,11 @@
+#Virtual environment
+/crypto-position-dashboard-venv
+
+#Environment vars
+.env
+
+#Created by API calls
+/__pycache__
+
+#Dashboard save and config files
+pos1.json
