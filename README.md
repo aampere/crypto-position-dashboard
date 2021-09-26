@@ -6,7 +6,7 @@ In stock and currency trading, "position" refers to the average price at which t
 
 ## Using the Dashboard
 On the left, the user can select any number of available cryptocurrencies to monitor. They can enter their position in each currency and a target price. The ratio of target price to position is calculated as a convenience. Once the user selects currencies to monitor, current market data will appear for each currency on the right. The user's position, the current price, and the ratio of the current price to the user's position is shown. Clicking "save" at the bottom will save the user's current inputs, which can be loaded next time the program is opened.  
-![Dashboard screenshot](Crypto%20Position%20Dashboard%20screenshot.JPG)
+![Crypto Position Dashboard screenshot](https://user-images.githubusercontent.com/66134580/134827697-b9b2e771-bfbe-4ea3-8785-12ca66fbd976.JPG)
 
 ## The Code
 Current cryptocurrency market data is obtained with the Coinbase Pro API. Whenever a price changes on the Coinbase market, that is reflected immediately in the dashboard. Any of the currencies available on Coinbase can be monitored, but I limit it here to 15. The UI is created with a rudimentary UI library called tkinter. Tkinter is extremely simple and fast to use for basic input and text display, I would not use it for anything else.
