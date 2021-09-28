@@ -168,7 +168,7 @@ class PositionMonitor:
 root = tk.Tk()
 root.title("Crypto Position Dashboard")
 
-#Define crypto pair strings used in labels and requests
+#Read in crypto pair strings used in labels and requests
 fp = open('pairs.json','r')
 pairconf = json.load(fp)
 pairs=pairconf["pairs"]
@@ -216,11 +216,11 @@ for i in range(len(pairs)):
     legendpair = tk.Label(inputframe,text="Pair")
     legendposition = tk.Label(inputframe,text="Position")
     legendtarget = tk.Label(inputframe,text="Target")
-    legendtargetchange = tk.Label(inputframe,text="target%")
+    legendtargetchange = tk.Label(inputframe,text="Ratio")
     legendactivepair = tk.Label(outputframe,text="Pair",font=('Courier',12),width=8)
     legendactiveposition = tk.Label(outputframe,text="Position",font=('Courier',12),width=8)
     legendactiveprice = tk.Label(outputframe,text="Price",font=('Courier',12),width=8)
-    legendactivechange = tk.Label(outputframe,text="%",font=('Courier',12),width=6)
+    legendactivechange = tk.Label(outputframe,text="Ratio",font=('Courier',12),width=6)
     paircheckboxes.append(tk.Checkbutton(inputframe,text=pairs[i],variable=pairchecks[i],command=checkToggled))
     positionentries.append(tk.Entry(inputframe,textvariable=positions[i],width=7))
     targetentries.append(tk.Entry(inputframe,textvariable=targets[i],width=7))
